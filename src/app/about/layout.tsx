@@ -1,4 +1,4 @@
-import Navbar from "../components/navbar";
+
 
 export default function AboutLayout({
   children,
@@ -8,7 +8,6 @@ export default function AboutLayout({
   return (
     <>
       <div>
-      <Navbar/>
         <h1>About Header</h1>
       </div>
       {children}

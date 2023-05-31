@@ -1,7 +1,3 @@
-import Navbar from "../components/navbar";
-
-
-
 export default function ContactLayout({
   children,
 }: {
@@ -10,7 +6,6 @@ export default function ContactLayout({
   return (
     <>
       <div>
-    <Navbar/>
 
         <h1>Contact Header</h1>
       </div>

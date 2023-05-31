@@ -1,12 +1,21 @@
 import Link from "next/link";
 import styles from "./nav.module.scss";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
     <div className={styles.nav_wrapper}>
       <nav className="container mx-auto flex flex-row flex-wrap justify-between gap-3">
         <div className={`text-left p-6 logo ${styles.logo} order-2 md:order-none`}>
-          <Link href={"/"}>{"<Aristreet/>"}</Link>
+          <Link href={"/"}>
+            {/* {"<Aristreet/>"} */}
+            <Image src={"/images/aristreet.png"}
+            width={150}
+            height={30}
+            alt="aristreet logo"
+            className="w-full"
+            ></Image>
+            </Link>
         </div>
         <div className="flex gap-3 p-6 order-1 md:order-none hidden lg:flex">
           <Link href={"/"}>

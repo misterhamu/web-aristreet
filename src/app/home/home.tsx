@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styles from "./home.module.scss";
 import Skill from "../components/skill/skill";
+import styles from "./home.module.scss";
 
 export default function HomePage() {
   return (
