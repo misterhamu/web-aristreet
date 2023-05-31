@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&&family=Sarabun:ital@0;1&display=swap");
+@import "./styles/icons.scss";
+@import "./styles/hamburger.scss";
+
+:root {
+  --primary_color: #ff5249;
+}
+
+html,
+body {
+  font-family: "Inter";
+  // font-family: "IBM Plex Sans Thai";
+}
+
+.color-primary {
+  color: var(--primary_color);
+}
+
+.btn-primary {
+  background: var(--primary_color);
+  color: #fff;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  padding: 15px 35px 15px 35px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  min-width: 180px;
+}
+
+button {
+  &:hover {
+    -webkit-filter: brightness(95%);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    .ic-arrow_right{
+    transform: translate(3px, 0px);
+    transition: all 0.3s ease;
+    }
+    .ic-arrow_down{
+        transform: translate(0px, 3px);
+        transition: all 0.3s ease;
+        }
+  }
+  &:active {
+    transform: translate(3px, 2px);
+  }
+}
+
+
+.bg-overlay {
+  background: url("/images/banner_overlay.png") no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+
+}

@@ -1,0 +1,112 @@
+.home {
+  padding-top: 150px;
+  background: #131313;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+//   min-height: 940px;
+}
+.shape_1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  svg {
+    circle {
+      fill: #ff4155;
+    }
+  }
+}
+.shape_2 {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  svg {
+    circle {
+      fill: #ffe600;
+    }
+  }
+}
+.shape_3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  svg {
+    circle {
+      fill: #48c5ea;
+    }
+  }
+}
+.line_shape_1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.line_shape_2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.float_icon_1 {
+  position: absolute;
+  left: 0;
+  top: 15%;
+  width: 120px;
+  height: 120px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 25px;
+  animation: float 6s ease-in-out infinite;
+  @media screen and (max-width: 1024px) and (min-width: 768px) {
+    // width: 95px;
+    // height: 95px;
+  }
+}
+
+.float_icon_2 {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  width: 90px;
+  height: 90px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 25px;
+}
+
+.float_icon_3 {
+  position: absolute;
+  right: 10%;
+  bottom: 0%;
+  width: 90px;
+  height: 90px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 25px;
+}
+
+.flot_message {
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}

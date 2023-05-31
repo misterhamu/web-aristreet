@@ -1,0 +1,115 @@
+.skill_wrapper {
+  background: #191919;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+.exp_wrapper {
+  position: relative;
+  max-width: 480px;
+}
+.exp {
+  background: linear-gradient(180deg, #2e2c1f, #1b1b19);
+  border-radius: 10px;
+  max-width: 350px;
+  text-align: center;
+  padding: 50px 50px 180px;
+  position: relative;
+  h2 {
+    font-size: 140px;
+    font-weight: 700;
+    color: #ffe600;
+  }
+}
+
+.web_devlop {
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  &::before {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 98%;
+    height: 96%;
+    content: "";
+    background: #2d2b1f;
+    opacity: 0.85;
+    z-index: -1;
+    border-radius: 12px;
+  }
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: linear-gradient(90deg, #939393, rgba(28, 26, 26, 0.3));
+    opacity: 1;
+    z-index: -2;
+    border-radius: 12px;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 28px;
+    color: #fff;
+    flex-basis: 50%;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  p {
+    margin-bottom: 0;
+    flex-basis: 50%;
+    color: #fff;
+  }
+}
+
+.skill_box {
+  // background: linear-gradient(180deg,rgba(red, 0.6),rgba(31, 30, 28, 0.6) 67.59%);
+  flex-basis: 13.7%;
+  border-radius: 12px;
+  margin: 0 15px 30px;
+
+  @media screen and (max-width: 575px){
+    flex-basis: 41.33%;
+  }
+  @media screen and (max-width: 767px) and (min-width: 576px){
+    flex-basis: 19.53%;
+  }
+  @media screen and (max-width: 1023px) and (min-width: 768px){
+    flex-basis: 16.0%;
+  }
+  @media screen and (max-width: 1200px) and (min-width: 1024px){
+    flex-basis: 16.33%;
+  }
+  @media screen and (max-width: 1400px) and (min-width: 1201px){
+    flex-basis: 13.33%;
+  }
+  .skill_box_inner {
+    // padding: 40px;
+    // padding: 3rem;
+    padding: 2rem 0;
+    background: #1f1e1d;
+    margin: 3px 3px 0;
+    text-align: center;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  p {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+}
