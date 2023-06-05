@@ -1,0 +1,13 @@
+.separator {
+  background: hsla(0, 0%, 100%, 0.05);
+  width: calc(100% - 30px);
+  height: 1px;
+  position: absolute;
+  left: 15px;
+  top: 0;
+}
+.footer_wrapper{
+  background-color: #202020;
+    position: relative;
+    z-index: 1;
+}
