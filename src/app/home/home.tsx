@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Skill from "../components/skill/skill";
 import styles from "./home.module.scss";
+import Working from "../components/working/working";
+import Strength from "../components/strength/strength";
 
 export default function HomePage() {
   return (
@@ -191,8 +193,14 @@ export default function HomePage() {
           ></Image>
         </div>
       </section>
-      <section>
+      <section id="skill">
         <Skill />
+      </section>
+      <section id="strength">
+        <Strength />
+      </section>
+      <section id="woking">
+        <Working />
       </section>
     </>
   );

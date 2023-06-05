@@ -1,0 +1,41 @@
+.working_wrapper {
+  background: #222121;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding-bottom: 90px;
+}
+
+.ab_shape {
+  position: absolute;
+  left: 0;
+  top: -70%;
+  z-index: -1;
+}
+
+.working_box {
+  background: #232221;
+  border: 2px solid #373737;
+  border-radius: 12px;
+  text-align: center;
+  padding: 50px 40px;
+  margin-bottom: 30px;
+  max-width: 350px;
+  @media screen and (max-width: 767px){
+    max-width: 100%;
+  }
+  .icons {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    background: #fff;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    transition: all 0.3s;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

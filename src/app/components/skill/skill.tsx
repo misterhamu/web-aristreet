@@ -4,6 +4,12 @@ import Image from "next/image";
 const skills = [
   {
     id: 0,
+    color: "white",
+    name: "Nextjs",
+    icons: "/images/skills/nextjs.png",
+  },
+  {
+    id: 0,
     color: "lightblue",
     name: "React",
     icons: "/images/skills/react.png",
@@ -87,6 +93,8 @@ export default function Skill() {
         return "140, 200, 1, 0.6";
       case "purple":
         return "40, 84, 243, 0.6";
+      case "white":
+        return "255, 255, 255, 0.6";
     }
   };
 
@@ -106,11 +114,13 @@ export default function Skill() {
         return "text-green-200";
       case "purple":
         return "text-blue-500";
+      case "white":
+        return "text-white";
     }
   };
 
   return (
-    <div className={`${styles.skill_wrapper} pt-24`}>
+    <div className={`${styles.skill_wrapper} pt-24 pb-24`}>
       <div className="container mx-auto ">
         <div className="flex flex-col lg:flex-row p-6 justify-between  z-10 relative ">
           <div className="basis-1/2 flex flex-col">
@@ -175,6 +185,36 @@ export default function Skill() {
             );
           })}
         </div>
+      </div>
+      <div className={styles.ab_shape_2}>
+        <svg width="1252" height="1901" viewBox="0 0 1252 1901" fill="none">
+          <g opacity="0.15" filter="url(#filter0_f_39_4265)">
+            <circle cx="950" cy="950.004" r="450"></circle>
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_39_4265"
+              x="-0.00012207"
+              y="0.00402832"
+              width="1900"
+              height="1900"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              ></feBlend>
+              <feGaussianBlur
+                stdDeviation="250"
+                result="effect1_foregroundBlur_39_4265"
+              ></feGaussianBlur>
+            </filter>
+          </defs>
+        </svg>
       </div>
     </div>
   );
